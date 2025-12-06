@@ -1,42 +1,48 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { useAudio } from '../../contexts/AudioContext'
+import { useAudio } from '../../../contexts/AudioContext'
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import React, { useEffect, useRef, useState } from "react"
 import BackgroundParticles from "@/components/BackgroundParticles"
+import { LanguageSelector } from "@/components/LanguageSelector"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { useTranslations } from 'next-intl'
 
 export default function ProjectsPage() {
+  const t = useTranslations();
+  const projects = useTranslations('projects');
+  const tooltips = useTranslations('tooltips');
+
   const { isPlaying, toggleAudio } = useAudio();
 
-  const projects = [
+  const projectsData = [
     {
-      title: "Rocket Adventures, A Unity Game",
-      description: "A 3D rocket navigation game developed in Unity using C#, featuring physics-based controls, level progression, and dynamic camera movement with immersive particle effects.",
+      title: projects('items.rocket.title'),
+      description: projects('items.rocket.description'),
       github: "https://github.com/asapSAGNIK/Rocket-Adventures-3D-A-Unity-Game",
       website: "https://rocket-adventures.vercel.app/",
       isDeployed: true,
     },
     {
-      title: "Smart Playlist",
-      description: "An AI-powered music discovery platform that creates personalized playlists from natural language prompts. Simply describe your mood or desired vibe, and get curated music recommendations tailored to your preferences.",
+      title: projects('items.smartPlaylist.title'),
+      description: projects('items.smartPlaylist.description'),
       github: "https://github.com/srijantelang-work/Smartplaylist",
       website: "https://smartplaylist.software/",
       isDeployed: true,
     },
     {
-      title: "P.L.A.T.E (Personalized learning and Assistance for Taste Enhancement)",
-      description: "An AI-powered recipe recommendation platform that helps you discover new dishes based on your preferences. Features include Fridge Mode for recipes using available ingredients and Explore Mode for discovering new cuisines and cooking styles tailored to your taste profile.",
+      title: projects('items.plate.title'),
+      description: projects('items.plate.description'),
       github: "https://github.com/asapSAGNIK/P.L.A.T.E",
       website: "https://plate-liard.vercel.app/",
       isDeployed: true,
     },
     {
-      title: "Mini Project Management System",
-      description: " A full-stack project management tool built featuring organization-based multi-tenancy.",
+      title: projects('items.projectManagement.title'),
+      description: projects('items.projectManagement.description'),
       github: "https://github.com/asapSAGNIK/Mini-Project-Management-System",
     },
   ]
@@ -57,10 +63,11 @@ export default function ProjectsPage() {
               style={{ fontFamily: 'Satoshi Medium, sans-serif', color: isPlaying ? undefined : '#3A5FFF' }}
             >
               <ArrowLeft className="w-4 h-4" />
-              Home
+              {t('nav.home')}
             </Link>
 
             <nav className="flex items-center gap-3">
+              <LanguageSelector />
               <Link href="https://www.linkedin.com/in/sagnik-chowdhury-252035251/" target="_blank" className="social-button-small" aria-label="LinkedIn" style={{
                 '--social-border-color': isPlaying ? '#f0eeef' : '#3A5FFF',
                 '--social-icon-color': isPlaying ? '#f0eeef' : '#3A5FFF'
@@ -122,7 +129,7 @@ export default function ProjectsPage() {
                     </div>
                   </TooltipTrigger>
                   <TooltipContent>
-                    <p>Sure!! Why not</p>
+                    <p>{tooltips('audio')}</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -134,10 +141,10 @@ export default function ProjectsPage() {
           {/* Projects Section */}
           <div className="space-y-6">
             <h2 className={`text-2xl font-bold mb-4 ${isPlaying ? 'text-yellow-500' : ''}`} style={{ fontFamily: 'Hoover, sans-serif', color: isPlaying ? undefined : '#3A5FFF' }}>
-              Projects
+              {projects('title')}
             </h2>
             <div className="flex flex-col lg:flex-row gap-4">
-                  {projects.map((project, index) => (
+                  {projectsData.map((project, index) => (
                     <Card
                       key={index}
                       className={`flex-1 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer border ${isPlaying ? 'hover:bg-gradient-to-r from-transparent via-gray-800/50 to-transparent border-gray-700/50' : 'border-gray-300/50'}`}
@@ -174,7 +181,7 @@ export default function ProjectsPage() {
 
               {/* GitHub Note */}
               <p className={`text-center text-sm mt-4 ${isPlaying ? 'text-muted-foreground' : ''}`} style={{ fontFamily: 'Satoshi Medium, sans-serif', color: isPlaying ? undefined : '#6B8CE8' }}>
-                Feel free to visit my github for more open source projects
+                {projects('githubNote')}
               </p>
           </div>
         </div>
@@ -183,6 +190,3 @@ export default function ProjectsPage() {
     </>
   )
 }
-
-
-

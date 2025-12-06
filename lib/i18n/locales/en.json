@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "resume": "Resume",
+    "home": "Home"
+  },
+  "hero": {
+    "summary": "Summary",
+    "description": {
+      "age": "I'm a 23 y/o Full-Stack Developer from Kolkata, India",
+      "crafting": "Crafting intuitive, responsive web and mobile apps with a focus on clean design and seamless UX.",
+      "experience": "I have experience of working with clients and have provided solutions to their problems.",
+      "plate": "I am actively developing <link>P.L.A.T.E</link> (Personalized learning and Assistance for Taste Enhancement)",
+      "hobbies": "When I'm not building products, you'll usually find me:"
+    }
+  },
+  "work": {
+    "title": "WorkEx",
+    "experience": {
+      "skyline": {
+        "title": "Skyline Properties",
+        "description": "A fully responsive real estate website with dynamic property listings and search capability. I implemented the UI architecture, optimized load times, and ensured smooth navigation across devices."
+      },
+      "sunder": {
+        "title": "Sunder Garments",
+        "description": "An end-to-end e-commerce platform supporting web and mobile storefronts with cart, checkout, and order management. I engineered the full workflow from product listing to secure transactions and deployment."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "githubNote": "Feel free to visit my github for more open source projects",
+    "items": {
+      "rocket": {
+        "title": "Rocket Adventures, A Unity Game",
+        "description": "A 3D rocket navigation game developed in Unity using C#, featuring physics-based controls, level progression, and dynamic camera movement with immersive particle effects."
+      },
+      "smartPlaylist": {
+        "title": "Smart Playlist",
+        "description": "An AI-powered music discovery platform that creates personalized playlists from natural language prompts. Simply describe your mood or desired vibe, and get curated music recommendations tailored to your preferences."
+      },
+      "plate": {
+        "title": "P.L.A.T.E (Personalized learning and Assistance for Taste Enhancement)",
+        "description": "An AI-powered recipe recommendation platform that helps you discover new dishes based on your preferences. Features include Fridge Mode for recipes using available ingredients and Explore Mode for discovering new cuisines and cooking styles tailored to your taste profile."
+      },
+      "projectManagement": {
+        "title": "Mini Project Management System",
+        "description": "A full-stack project management tool built featuring organization-based multi-tenancy."
+      }
+    }
+  },
+  "resume": {
+    "title": "Resume",
+    "view": "View Resume"
+  },
+  "footer": {
+    "copyright": "© 2025 Sagnik Chowdhury",
+    "location": "Kolkata"
+  },
+  "tooltips": {
+    "audio": "Sure!! Why not",
+    "hooping": "Hooping",
+    "football": "Defending like my life depends on it",
+    "dj": "Learning to DJ on Rekordbox",
+    "cs2": "Queued up in CS2",
+    "fifa": "Thrashing people in FIFA"
+  },
+  "metadata": {
+    "title": "Sagnik Chowdhury",
+    "description": "Portfolio website showcasing my work as a Full-Stack Developer"
+  }
+}
+
+
+

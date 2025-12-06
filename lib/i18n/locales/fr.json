@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "resume": "CV",
+    "home": "Accueil"
+  },
+  "hero": {
+    "summary": "Résumé",
+    "description": {
+      "age": "Je suis un développeur Full-Stack de 23 ans originaire de Kolkata, Inde",
+      "crafting": "Création d'applications web et mobiles intuitives et réactives avec un focus sur un design épuré et une UX fluide.",
+      "experience": "J'ai de l'expérience dans le travail avec des clients et j'ai fourni des solutions à leurs problèmes.",
+      "plate": "Je développe activement <link>P.L.A.T.E</link> (Apprentissage Personnalisé et Assistance pour l'Amélioration du Goût)",
+      "hobbies": "Quand je ne construis pas de produits, vous me trouverez généralement en train de :"
+    }
+  },
+  "work": {
+    "title": "Expérience",
+    "experience": {
+      "skyline": {
+        "title": "Skyline Properties",
+        "description": "Un site web immobilier entièrement réactif avec des listes de propriétés dynamiques et des capacités de recherche. J'ai implémenté l'architecture UI, optimisé les temps de chargement et assuré une navigation fluide sur tous les appareils."
+      },
+      "sunder": {
+        "title": "Sunder Garments",
+        "description": "Une plateforme e-commerce de bout en bout prenant en charge les vitrines web et mobiles avec panier, paiement et gestion des commandes. J'ai conçu le workflow complet de la liste des produits aux transactions sécurisées et au déploiement."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets",
+    "githubNote": "N'hésitez pas à visiter mon github pour plus de projets open source",
+    "items": {
+      "rocket": {
+        "title": "Rocket Adventures, Un Jeu Unity",
+        "description": "Un jeu de navigation de fusée 3D développé dans Unity en utilisant C#, avec des contrôles basés sur la physique, la progression des niveaux et le mouvement de caméra dynamique avec des effets de particules immersifs."
+      },
+      "smartPlaylist": {
+        "title": "Smart Playlist",
+        "description": "Une plateforme de découverte musicale alimentée par IA qui crée des playlists personnalisées à partir d'invites en langage naturel. Décrivez simplement votre humeur ou votre ambiance souhaitée, et obtenez des recommandations musicales sélectionnées selon vos préférences."
+      },
+      "plate": {
+        "title": "P.L.A.T.E (Apprentissage Personnalisé et Assistance pour l'Amélioration du Goût)",
+        "description": "Une plateforme de recommandation de recettes alimentée par IA qui vous aide à découvrir de nouveaux plats selon vos préférences. Inclut le Mode Frigo pour les recettes utilisant les ingrédients disponibles et le Mode Explorer pour découvrir de nouvelles cuisines et styles culinaires."
+      },
+      "projectManagement": {
+        "title": "Mini Système de Gestion de Projet",
+        "description": "Un outil de gestion de projet full-stack avec multi-tenancy basé sur l'organisation."
+      }
+    }
+  },
+  "resume": {
+    "title": "CV",
+    "view": "Voir le CV"
+  },
+  "footer": {
+    "copyright": "© 2025 Sagnik Chowdhury",
+    "location": "Kolkata"
+  },
+  "tooltips": {
+    "audio": "Bien sûr !! Pourquoi pas",
+    "hooping": "Faire du basket",
+    "football": "Défendre comme si ma vie en dépendait",
+    "dj": "Apprendre le DJ sur Rekordbox",
+    "cs2": "En file d'attente dans CS2",
+    "fifa": "Écraser les gens dans FIFA"
+  },
+  "metadata": {
+    "title": "Sagnik Chowdhury",
+    "description": "Site web portfolio présentant mon travail en tant que développeur Full-Stack"
+  }
+}
+
+
+
