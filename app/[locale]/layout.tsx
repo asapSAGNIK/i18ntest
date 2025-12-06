@@ -33,7 +33,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <AudioProvider>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
           </NextIntlClientProvider>
         </AudioProvider>
