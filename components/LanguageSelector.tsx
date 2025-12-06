@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import {
@@ -13,6 +13,7 @@ import { Languages } from 'lucide-react';
 import { locales, localeDisplayNames, defaultLocale, type Locale } from '@/lib/i18n/config';
 
 export function LanguageSelector() {
+  const router = useRouter();
   const pathname = usePathname();
   const currentLocale = useLocale();
 
@@ -34,8 +35,8 @@ export function LanguageSelector() {
     // With localePrefix 'always', always prefix the locale
     const newPath = `/${locale}${pathWithoutLocale}`;
 
-    // Use full page reload to ensure locale context is refreshed
-    window.location.href = newPath;
+    // Client navigation preserves stateful providers in the root layout
+    router.push(newPath);
   };
 
   return (
